@@ -29,19 +29,6 @@ You can verify the application is running by accessing the health check endpoint
 You should get a response indicating the service is healthy.
 5. **Stopping the Containers:**
 `docker-compose down`
-## Database Schema Explanation
-Get a complete database diagram to dive into the database architecture! 📊
-**Discover:**  
-- How users connect with sessions  
-- Track session metrics  
-  
-If you are trying to understand the connections within a system, you will find the **Schema.pdf** file useful.:
-### Indices
-- **idx_session_user_id**: Index on the **user_id** column in the **sessions** table for faster lookups.
-- **idx_metrics_session_id**: Index on the **session_id** column in the **metrics** table for efficient querying of metrics by session.
-
-📂 **[Download the Schema PDF](https://github.com/Anna-Gaplanyan/User-Metrics-Ingestion/blob/main/Schema/Schema.pdf)** to access the complete database layout!
-
 
 ## Stored Procedures
 1. Aggregate User Metrics (Aggregates total talked time and counts distinct sessions for individual users)
